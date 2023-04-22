@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        ul#softdrinks li {
+            color: blue;
+            font-size: 20px;
+            font-weight: normal;
+        }
+        ul#softdrinks li.best {
+            color: black;
+            font-weight: bold;
+        }
+        h1 {
+            color: coral;
+        }
+    </style>
+    <link rel="stylesheet" href="specificity.css">
+</head>
+<body>
+    <ul id="softdrinks">
+        <li>Pepsi</li>
+        <li class="best">Hello</li>
+        <li style="color:pink;">Montain Dew</li>
+    </ul>
+    <h1 style="color:darkred">Subscribe to Channel</h1>
+</body>
+</html>

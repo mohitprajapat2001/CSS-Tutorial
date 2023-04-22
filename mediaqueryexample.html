@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+          }
+          body {
+            font: 14px Georgia, serif;
+            background: #ccc;
+          }
+          
+          article,
+          aside,
+          figure,
+          footer,
+          header,
+          hgroup,
+          menu,
+          nav,
+          section {
+            display: block;
+          }
+          
+          h2 {
+            font: 24px Georgia;
+            margin: 0 0 10px 0;
+          }
+          h3 {
+            margin: 0 0 8px 0;
+          }
+          p {
+            margin: 0 0 20px 0;
+          }
+          
+          #fluid-wrap {
+            width: 70%;
+            margin: 60px auto;
+            padding: 20px;
+            background: #eee;
+            overflow: hidden;
+          }
+          
+          #sidebar {
+            width: 35%;
+            float: left;
+          }
+          
+          #sidebar ul {
+            list-style: none;
+          }
+          
+          #sidebar ul li a {
+            color: #900;
+            text-decoration: none;
+            padding: 3px 0;
+            display: block;
+          }
+          
+          
+          #main-content {
+            width: 65%;
+            float: right;
+          }
+          
+          @media all and (min-width: 1001px) {
+            #sidebar ul li a:after {
+              content: " (" attr(data-email) ")";
+              font-size: 11px;
+              font-style: italic;
+              color: #666;
+            }
+          }
+          
+          @media all and (max-width: 1000px) and (min-width: 700px) {
+            #sidebar ul li a:before {
+              content: "Youtube : ";
+              font-style: italic;
+              color: #666;
+            }
+          }
+          
+          @media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {
+            #sidebar ul li a {
+              padding-left: 21px;
+              background: url(../new.svg) left center no-repeat;
+            }
+          }
+    </style>
+</head>
+
+<body>
+    <div id="sidebar">
+        <h3>Subscribe Mohit  Prajapat</h3>
+        <ul id="nav">
+           <li><a data-email="Youtube/@itsmohitprajapat">Youtube</a></li>
+           <li><a data-email="Instagram/rowdy_mohit__">Instagram</a></li>
+           <li><a data-email="Github/mohitprajapati2001">Github</a></li>
+        </ul>
+      </div>
+    
+      <div id="main-content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore in totam nobis suscipit molestias itaque sequi veritatis corporis, expedita neque delectus est quidem exercitationem vel vero soluta et quam tenetur molestiae hic. Molestias similique, delectus consequuntur sapiente in nihil eum repellendus ad aperiam enim voluptatem cum dolor modi voluptate quam cupiditate quisquam? Neque illo cupiditate nemo eveniet adipisci, saepe beatae atque est minus sapiente ab distinctio facere ratione nostrum quas laborum consequuntur voluptatem alias? Quod pariatur dolore unde temporibus veritatis explicabo amet soluta debitis, cupiditate accusamus? Voluptatum nostrum magnam eos rerum harum nesciunt, veritatis reprehenderit eveniet dolores, consectetur iure modi!
+      </div>
+    
+    </div>
+</body>
+
+</html>

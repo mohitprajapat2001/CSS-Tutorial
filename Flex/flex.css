@@ -1,0 +1,36 @@
+div.container {
+    font-size: larger;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
+    padding: 20px;
+    height: 500px;
+    margin: 10px;
+    border: 2px solid;
+}
+.box1,.box2,.box3,.box4,.box5,.box6 {
+    width: 75px;
+    height: 75px;
+    border: 1px solid;
+    background-color: lightcoral;
+    margin: 5px;
+}
+.box2 {
+    background-color: lightgreen;
+    height: 80px;
+}
+.box3 {
+    background-color: lightsalmon;
+    height: 125px;
+}
+.box4 {
+    background-color: lightslategrey;
+    height: 110px;
+}
+.box5 {
+    background-color: lightyellow;
+    height: 150px;
+}
+.box6 {
+    background-color: purple;
+}

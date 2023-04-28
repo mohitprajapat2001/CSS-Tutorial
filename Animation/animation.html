@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div {
+            animation: bounce 1s ease-in-out infinite both alternate;
+            height: 200px;
+            width: 200px;
+            background: red;
+            position: relative;
+            left: 25%;
+        }
+        @keyframes bounce {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+            50% {
+                top: 250px;
+                left: 250px;
+                background: greenyellow;
+                border-radius: 100%;
+
+            }
+            100% {
+                top: 500px;
+                left: 250px;
+                background: lightcoral;
+                border-radius: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
